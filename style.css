@@ -1,0 +1,405 @@
+/*////////////////////ERIC MEYER RESET//////////////////////*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////GLOBALS//////////////////////*/
+
+a{
+	color:inherit;
+	text-decoration: inherit;
+}
+
+img{
+	display:block;
+    width:100%;
+    height: auto;
+}
+
+*	{	box-sizing: border-box;	}
+
+html,body{
+	min-height: 100vh;
+	text-size-adjust:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////FONT//////////////////////*/
+
+@font-face {
+    font-family: 'cerebri';
+    src: url('fonts/cerebrisans-bold-webfont.eot');
+    src: url('fonts/cerebrisans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cerebrisans-bold-webfont.woff2') format('woff2'),
+         url('fonts/cerebrisans-bold-webfont.woff') format('woff'),
+         url('fonts/cerebrisans-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'cerebri';
+    src: url('fonts/cerebrisans-extrabold-webfont.eot');
+    src: url('fonts/cerebrisans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cerebrisans-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/cerebrisans-extrabold-webfont.woff') format('woff'),
+         url('fonts/cerebrisans-extrabold-webfont.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerebri';
+    src: url('fonts/cerebrisans-heavy-webfont.eot');
+    src: url('fonts/cerebrisans-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cerebrisans-heavy-webfont.woff2') format('woff2'),
+         url('fonts/cerebrisans-heavy-webfont.woff') format('woff'),
+         url('fonts/cerebrisans-heavy-webfont.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerebri';
+    src: url('fonts/cerebrisans-light-webfont.eot');
+    src: url('fonts/cerebrisans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cerebrisans-light-webfont.woff2') format('woff2'),
+         url('fonts/cerebrisans-light-webfont.woff') format('woff'),
+         url('fonts/cerebrisans-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cerebri';
+    src: url('fonts/cerebrisans-regular-webfont.eot');
+    src: url('fonts/cerebrisans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cerebrisans-regular-webfont.woff2') format('woff2'),
+         url('fonts/cerebrisans-regular-webfont.woff') format('woff'),
+         url('fonts/cerebrisans-regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+
+body{
+	font-family: 'cerebri', 'Muli', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 400;
+    background: #FBFBFB;
+    color: #282828;
+}
+
+
+
+.main_container{
+    max-width: 77.815rem;
+    width: 77.815rem;
+    margin: 0 auto;
+
+     background: inherit;
+}
+
+
+
+/*////////////////////  HEADER  //////////////////////*/
+
+
+.main_header{
+    height: 3.981rem;
+    width: 100%;
+    margin-bottom: 3.981rem;
+}
+        
+         .main_header:before{
+            content: "";
+            display: block;
+            clear:both;
+        }
+
+
+.logo{
+    float: left;
+    width: 3.981rem;
+    height: 100%;
+}
+
+.burger_menu{
+    float: right;
+    height: 3.981rem;
+    width: 3.981rem;
+}
+
+.x_container{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+
+    .x_container div{
+        position: relative;
+        width: 1.5rem;
+        height: .12rem;
+        border-radius: .06rem;
+        background: #282828;
+    }
+
+    .line_ov{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .line_1{
+        top: 45%
+    }
+     
+    .line_2{
+        width: 1rem;
+        top: 55%
+    }   
+
+
+
+
+/*////////////////////  BODY BLOG  //////////////////////*/
+
+
+.page_introduction{
+    width: 50%;
+    padding-right: 3.125rem;
+    margin-bottom: 3.981rem;
+    font-weight: 800;
+    font-size: 2.462rem;
+    text-align: right;
+}
+
+
+.page_introduction span{
+    display: block;
+}
+
+
+
+/*////////////////////  CONTAINER BLOG  //////////////////////*/
+
+
+.project_container{
+    position: relative;
+    width: 100%;
+    height: 16.875rem;
+    margin-bottom: 1.518rem;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+            .project_container:last-of-type{
+                margin-bottom: 0rem;
+            }
+
+.project_description_cont{
+
+    position: absolute;
+    display: block;
+    top: 1.518rem;
+    left: 1.518rem;
+    text-align: right;
+}
+
+
+.project_title{   
+    font-size: 1.518rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: .581rem;
+}
+
+    .project_title span{
+       font-weight: 300; 
+    }
+
+.project_tag{
+    text-transform: uppercase;
+    font-size: .581rem;
+    letter-spacing: .5px;
+}
+
+
+.project_tag span{
+    margin-left: .581em;
+}
+
+
+
+
+/*////////////////////  CONTAINER PAGE  //////////////////////*/
+
+
+.title_container{
+    height: 16.875rem;
+    width: 50%;
+    padding-right: 3.125rem;
+    float: left;
+}
+
+
+.title_page{
+    font-weight: 800;
+    font-size: 2.462rem;
+    text-align: right;
+}
+
+
+.title_page span{
+    font-weight: 300;
+}
+
+
+.text_container_page{
+    float: right;
+    width: 50%;
+
+    padding-left: 3.125rem;
+
+}
+
+.photo_container{
+    float: left;
+    width: 50%;
+
+    padding-left: 3.125rem;
+
+}
+
+
+.subtitle_container{
+    height: 16.875rem;
+}
+
+.extract_page{
+    font-weight: 800;
+    font-size: 1.518rem;
+    margin-bottom: 10.431rem;
+}
+
+        .extract_page span{
+            display: block;
+        }
+
+.date_page{
+    font-size: .937rem;
+    font-weight: 900;
+    margin-bottom: .937rem;
+    letter-spacing: 2px;
+}
+
+.cont_page{
+    font-size: .937rem;
+    font-weight: 300;
+    line-height: 1.518rem;
+    margin-bottom: 1.518rem;
+    letter-spacing: .5px;
+}        
+        .cont_page:last-of-type{
+        margin-bottom: 0rem;
+    }
+/*//////////////////// PHOTO CONTAINER //////////////////////*/
+
+
+
+
+
+
+
+
+
+
