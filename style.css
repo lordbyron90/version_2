@@ -18,35 +18,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -65,21 +65,22 @@ table {
 /*////////////////////GLOBALS//////////////////////*/
 
 a{
-	color:inherit;
-	text-decoration: inherit;
+    color:inherit;
+    text-decoration: inherit;
 }
 
 img{
-	display:block;
+    display:block;
     width:100%;
     height: auto;
 }
 
-*	{	box-sizing: border-box;	}
+*   {   box-sizing: border-box; }
 
 html,body{
-	min-height: 100vh;
-	text-size-adjust:none;
+    min-height: 100vh;
+    height: 100%;
+    text-size-adjust:none;
 }
 
 
@@ -171,34 +172,144 @@ html,body{
 
 
 body{
-	font-family: 'cerebri', 'Muli', 'Helvetica', 'Arial', sans-serif;
-	font-weight: 400;
-    background: #FBFBFB;
+    font-family: 'cerebri', 'Muli', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
     color: #282828;
+    background: black;
+
+
+
 }
 
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
+/*////////////////////  FULL WRAPPER Y MAIN CONT //////////////////////*/
 
+.full_wrapper{
+    overflow: hidden;
+    position: relative;
+    background: #FBFBFB;
+    padding-top: 7.5rem;
+
+}
 
 .main_container{
-    max-width: 77.815rem;
-    width: 77.815rem;
+   /* max-width: 77.815rem;
+    width: 77.815rem;*/
+
+
+    width: 75vw;
+
     margin: 0 auto;
 
-     background: inherit;
+    background: inherit;
 }
 
 
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
 
-/*////////////////////  HEADER  //////////////////////*/
+.overlay{
+    position: absolute;
+    top: -500px;
+    width: 100vw;
+    height: 500px;
+    z-index: 9000;
+
+    background: #FBFBFB;
+    transition: top 600ms ease-out 0s;
+}
+
+.overlay.animateOverlay{
+  top:0;
+  transition: top 600ms ease-out 0s;    
+}
+
+.burger_menu .line_ov.line_1,
+.burger_menu .line_ov.line_2 {
+transition: transform .3s ease-out;   
+transform: translateY(3px) rotate(0deg); 
+}
+
+.burger_menu.open .line_ov.line_1 {
+    transform: translateY(0px) rotate(45deg);
+    transition: transform .3s ease-out;
+}
+.burger_menu.open .line_ov.line_2 {
+    transform: translateY(-6px) rotate(-45deg);
+    transition: transform .3s ease-out;
+    /* background: red; */
+}
+
+
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+/*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
+
+
+.rainbow_container{
+    width: 100%;
+    height: 6px;
+    background: green;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#90f7ec+0,7db9e8+100 */
+    background: #90f7ec; /* Old browsers */
+    background: -moz-linear-gradient(left, #90f7ec 0%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #90f7ec 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #90f7ec 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#90f7ec', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+
+}           
+
+/*////////////////////  HEADER //////////////////////*/
+/*////////////////////  HEADER //////////////////////*/
+/*////////////////////  HEADER //////////////////////*/
+/*////////////////////  HEADER //////////////////////*/
+/*////////////////////  HEADER //////////////////////*/
+/*////////////////////  HEADER //////////////////////*/
+/*////////////////////  HEADER //////////////////////*/
+/*////////////////////  HEADER //////////////////////*/
+/*////////////////////  HEADER //////////////////////*/
+/*////////////////////  HEADER //////////////////////*/
 
 
 .main_header{
+    position: fixed;
     height: 3.981rem;
     width: 100%;
     margin-bottom: 3.981rem;
+    z-index: 9999;
 }
         
-         .main_header:before{
+         .main_header:after{
+            content: "";
+            display: block;
+            clear:both;
+        }
+
+        .main_header:before{
             content: "";
             display: block;
             clear:both;
@@ -211,23 +322,31 @@ body{
     height: 100%;
 }
 
+
+    .logo img{
+        transform: scale(.75);
+    }
+
+
+
 .burger_menu{
     float: right;
     height: 3.981rem;
     width: 3.981rem;
 }
 
+
+
 .x_container{
     display: inline-block;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 
     .x_container div{
-        position: relative;
-        width: 1.5rem;
-        height: .12rem;
+        /* position: relative; */
         border-radius: .06rem;
         background: #282828;
     }
@@ -235,23 +354,209 @@ body{
     .line_ov{
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        right: 0;
+        /* margin-right: -.75rem; */
     }
 
     .line_1{
-        top: 45%
+        top: 45%;
+        width: 1.5rem;
+        height: .12rem;
+
     }
      
     .line_2{
-        width: 1rem;
-        top: 55%
+        top: 55%;
+        width: 1.5rem;
+        height: .12rem;
     }   
 
+/*////////////////////  MASONRY  //////////////////////*/
+/*////////////////////  MASONRY  //////////////////////*/
+/*////////////////////  MASONRY  //////////////////////*/
+/*////////////////////  MASONRY  //////////////////////*/
+/*////////////////////  MASONRY  //////////////////////*/
+/*////////////////////  MASONRY  //////////////////////*/
+/*////////////////////  MASONRY  //////////////////////*/
 
+#container {
+  background: #EEE;
+    text-align: center;
+}
+
+.item {
+    width: 285px;
+    height: 285px;
+  background: #19D;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.item.w2 { width: 590px; height: 285px; }
+.item.h2 { width: 590px; height: 590px; }
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+
+.main_footer{
+    width: 100%;
+    padding: 3.981rem 0rem;
+    margin-top: 2.462rem;
+
+    font-weight: 400;
+    font-size: .937rem;
+    color:#9EA0A6;
+}
+
+    .main_footer:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+.web_copyright{
+    float: left;
+    padding: .5rem .5rem .5rem .5rem;
+}
+
+.ssmm_li{
+    float: right;;
+}
+
+
+.footer_li {
+  display: inline-block;
+  margin-left: 1.518rem;
+  padding: .5rem .5rem .5rem .5rem;
+  }
+
+
+/*////////////////////  HOVER  //////////////////////*/
+/*////////////////////  HOVER  //////////////////////*/
+/*////////////////////  HOVER  //////////////////////*/
+/*////////////////////  HOVER  //////////////////////*/
+/*////////////////////  HOVER  //////////////////////*/
+/*////////////////////  HOVER  //////////////////////*/
+/*////////////////////  HOVER  //////////////////////*/  
+
+.gradient_hover{
+  display: inline-block;
+  padding: .5rem .5rem .5rem .5rem;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.gradient_hover:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#90f7ec+0,7db9e8+100 */
+    background: #90f7ec; /* Old browsers */
+    background: -moz-linear-gradient(left, #90f7ec 0%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #90f7ec 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #90f7ec 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#90f7ec', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+
+
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5 s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.footer_li:hover, .footer_li:focus, .footer_li:active {
+  color: white;
+}
+.footer_li:hover:before, .footer_li:focus:before, .footer_li:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 
 /*////////////////////  BODY BLOG  //////////////////////*/
+/*////////////////////  BODY BLOG  //////////////////////*/
+/*////////////////////  BODY BLOG  //////////////////////*/
+/*////////////////////  BODY BLOG  //////////////////////*/
+/*////////////////////  BODY BLOG  //////////////////////*/
+/*////////////////////  BODY BLOG  //////////////////////*/
+/*////////////////////  BODY BLOG  //////////////////////*/
+
 
 
 .page_introduction{
@@ -270,6 +575,14 @@ body{
 
 
 
+/*////////////////////  CONTAINER BLOG  //////////////////////*/
+/*////////////////////  CONTAINER BLOG  //////////////////////*/
+/*////////////////////  CONTAINER BLOG  //////////////////////*/
+/*////////////////////  CONTAINER BLOG  //////////////////////*/
+/*////////////////////  CONTAINER BLOG  //////////////////////*/
+/*////////////////////  CONTAINER BLOG  //////////////////////*/
+/*////////////////////  CONTAINER BLOG  //////////////////////*/
+/*////////////////////  CONTAINER BLOG  //////////////////////*/
 /*////////////////////  CONTAINER BLOG  //////////////////////*/
 
 
@@ -322,7 +635,20 @@ body{
 
 
 /*////////////////////  CONTAINER PAGE  //////////////////////*/
+/*////////////////////  CONTAINER PAGE  //////////////////////*/
+/*////////////////////  CONTAINER PAGE  //////////////////////*/
+/*////////////////////  CONTAINER PAGE  //////////////////////*/
+/*////////////////////  CONTAINER PAGE  //////////////////////*/
+/*////////////////////  CONTAINER PAGE  //////////////////////*/
+/*////////////////////  CONTAINER PAGE  //////////////////////*/
 
+
+
+.main_clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
 
 .title_container{
     height: 16.875rem;
@@ -336,6 +662,7 @@ body{
     font-weight: 800;
     font-size: 2.462rem;
     text-align: right;
+    text-transform: uppercase;
 }
 
 
@@ -356,13 +683,15 @@ body{
     float: left;
     width: 50%;
 
-    padding-left: 3.125rem;
+    padding-right: 3.125rem;
 
 }
 
 
 .subtitle_container{
     height: 16.875rem;
+    line-height: 2.462rem;
+    font-size:2.462rem;
 }
 
 .extract_page{
@@ -403,3 +732,167 @@ body{
 
 
 
+
+/*//////////////////// PORTFOLIO PAGE //////////////////////*/
+/*//////////////////// PORTFOLIO PAGE //////////////////////*/
+/*//////////////////// PORTFOLIO PAGE //////////////////////*/
+/*//////////////////// PORTFOLIO PAGE //////////////////////*/
+/*//////////////////// PORTFOLIO PAGE //////////////////////*/
+/*//////////////////// PORTFOLIO PAGE //////////////////////*/
+/*//////////////////// PORTFOLIO PAGE //////////////////////*/
+/*//////////////////// PORTFOLIO PAGE //////////////////////*/
+/*//////////////////// PORTFOLIO PAGE //////////////////////*/
+
+
+
+.project_grid{
+    width: 100%;
+}
+        .project_grid:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+
+.right{
+    float:right;
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
+
+    .right_exception{
+        
+        margin-right: 50px;
+    }
+
+
+
+
+.left{
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+     .project_grid:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+
+
+.cont_type1{
+    position: relative;
+
+    display: inline-block;
+    width: 597.5px;
+    height: 16.875rem;
+
+
+    background: grey;
+    border-radius: 6px;
+    overflow: hidden;
+    vertical-align: text-top;
+}
+
+.cont_type2{
+    position: relative;
+
+    display: inline-block;
+    width: 597.5px;
+    height: 36.875rem;
+
+    background: grey;
+    border-radius: 6px;
+    overflow: hidden;
+    vertical-align: text-top;
+
+}
+
+.cont_type3{
+    position: relative;
+
+    display: inline-block;
+    width: 273.75px;
+    height: 16.875rem;
+
+
+    background: grey;
+    border-radius: 6px;
+    overflow: hidden;
+    vertical-align: text-top;
+
+}
+
+
+.project_title_group{
+    position: absolute;
+
+    top: 1.518rem;
+    left: 1.518rem;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////// CONTACT PAGE //////////////////////*/
+/*//////////////////// CONTACT PAGE //////////////////////*/
+/*//////////////////// CONTACT PAGE //////////////////////*/
+/*//////////////////// CONTACT PAGE //////////////////////*/
+/*//////////////////// CONTACT PAGE //////////////////////*/
+/*//////////////////// CONTACT PAGE //////////////////////*/
+/*//////////////////// CONTACT PAGE //////////////////////*/
+/*//////////////////// CONTACT PAGE //////////////////////*/
+
+
+
+
+.presentation_contact{
+    font-size: 3.981rem;
+    font-weight: 800;
+    line-height: 5.212rem;
+    margin-bottom: 3.981rem;
+}
+
+        .presentation_contact span{
+            display: block;
+        }
+
+        .presentation_contact span .gradient{
+
+            text-decoration: underline;
+            display: inline;
+            background: -webkit-linear-gradient(left,#90f7ec, #7db9e8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+        }
+
+
+.extract_contact{
+    color: #9EA0A6;
+    font-size: 2.462rem;
+    line-height: 3.221rem;
+    font-weight: 300;
+    margin-bottom: 1.518rem;
+}
+
+        .extract_contact span{
+           background: -webkit-linear-gradient(left,#90f7ec, #7db9e8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            font-weight: 800; 
+        }
