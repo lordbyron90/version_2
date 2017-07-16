@@ -1,4 +1,13 @@
-/*////////////////////ERIC MEYER RESET//////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
+/*////////////////////  ERIC MEYER RESET //////////////////////*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -54,16 +63,16 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-/*////////////////////GLOBALS//////////////////////*/
-
+/*////////////////////  GLOBALS //////////////////////*/
+/*////////////////////  GLOBALS //////////////////////*/
+/*////////////////////  GLOBALS //////////////////////*/
+/*////////////////////  GLOBALS //////////////////////*/
+/*////////////////////  GLOBALS //////////////////////*/
+/*////////////////////  GLOBALS //////////////////////*/
+/*////////////////////  GLOBALS //////////////////////*/
+/*////////////////////  GLOBALS //////////////////////*/
+/*////////////////////  GLOBALS //////////////////////*/
+/*////////////////////  GLOBALS //////////////////////*/
 a{
     color:inherit;
     text-decoration: inherit;
@@ -88,14 +97,16 @@ html,body{
 
 
 
-
-
-
-
-
-
-
-/*////////////////////FONT//////////////////////*/
+/*////////////////////  FONT //////////////////////*/
+/*////////////////////  FONT //////////////////////*/
+/*////////////////////  FONT //////////////////////*/
+/*////////////////////  FONT //////////////////////*/
+/*////////////////////  FONT //////////////////////*/
+/*////////////////////  FONT //////////////////////*/
+/*////////////////////  FONT //////////////////////*/
+/*////////////////////  FONT //////////////////////*/
+/*////////////////////  FONT //////////////////////*/
+/*////////////////////  FONT //////////////////////*/
 
 @font-face {
     font-family: 'cerebri';
@@ -175,7 +186,7 @@ body{
     font-family: 'cerebri', 'Muli', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
     color: #282828;
-    background: black;
+    background: #282828;
 
 
 
@@ -225,7 +236,7 @@ body{
 /*////////////////////  OVERLAY //////////////////////*/
 
 .overlay{
-    position: absolute;
+    position: fixed;
     top: -500px;
     width: 100vw;
     height: 500px;
@@ -253,10 +264,29 @@ transform: translateY(3px) rotate(0deg);
 .burger_menu.open .line_ov.line_2 {
     transform: translateY(-6px) rotate(-45deg);
     transition: transform .3s ease-out;
-    /* background: red; */
 }
 
 
+        /*////////////////////  OVERLAY CONTENT //////////////////////*/
+        /*////////////////////  OVERLAY CONTENT //////////////////////*/
+
+        .overlay_container{
+          text-align: right;
+          display: inline-block;
+          margin-top: 108.865px;
+        }
+
+        .overlay_item a{
+          display: inline-block;
+        }
+
+        .overlay_item{
+          font-weight: 800;
+          font-size: 41.585px;
+          margin-bottom: 25.701px;
+        }
+
+        
 /*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
 /*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
 /*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
@@ -272,7 +302,6 @@ transform: translateY(3px) rotate(0deg);
 .rainbow_container{
     width: 100%;
     height: 6px;
-    background: green;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#90f7ec+0,7db9e8+100 */
     background: #90f7ec; /* Old browsers */
@@ -371,6 +400,51 @@ transform: translateY(3px) rotate(0deg);
         height: .12rem;
     }   
 
+
+
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+/*////////////////////  FOOTER  //////////////////////*/
+
+.main_footer{
+    width: 100%;
+    padding: 3.981rem 0rem;
+    margin-top: 2.462rem;
+
+    font-weight: 400;
+    font-size: .937rem;
+    color:#9EA0A6;
+}
+
+    .main_footer:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+.web_copyright{
+    float: left;
+    padding: .5rem .5rem .5rem .5rem;
+}
+
+.ssmm_li{
+    float: right;;
+}
+
+
+.footer_li {
+  display: inline-block;
+  margin-left: 1.518rem;
+  padding: .5rem .5rem .5rem .5rem;
+  }
+
+
+
+
 /*////////////////////  MASONRY  //////////////////////*/
 /*////////////////////  MASONRY  //////////////////////*/
 /*////////////////////  MASONRY  //////////////////////*/
@@ -379,21 +453,19 @@ transform: translateY(3px) rotate(0deg);
 /*////////////////////  MASONRY  //////////////////////*/
 /*////////////////////  MASONRY  //////////////////////*/
 
-#container {
-  background: #EEE;
-    text-align: center;
-}
+
 
 .item {
-    width: 285px;
-    height: 285px;
-  background: #19D;
+  width: 255px;
+  height: 255px;
   display: inline-block;
   margin-bottom: 20px;
+  border-radius: 6px;
+
 }
 
-.item.w2 { width: 590px; height: 285px; }
-.item.h2 { width: 590px; height: 590px; }
+.item.w2 { width: 530px; height: 255px; }
+.item.h2 { width: 530px; height: 530px; }
 
 /* Start: Recommended Isotope styles */
 
@@ -448,45 +520,143 @@ transform: translateY(3px) rotate(0deg);
 }
 
 
-/*////////////////////  FOOTER  //////////////////////*/
-/*////////////////////  FOOTER  //////////////////////*/
-/*////////////////////  FOOTER  //////////////////////*/
-/*////////////////////  FOOTER  //////////////////////*/
-/*////////////////////  FOOTER  //////////////////////*/
-/*////////////////////  FOOTER  //////////////////////*/
-/*////////////////////  FOOTER  //////////////////////*/
 
-.main_footer{
-    width: 100%;
-    padding: 3.981rem 0rem;
-    margin-top: 2.462rem;
-
-    font-weight: 400;
-    font-size: .937rem;
-    color:#9EA0A6;
-}
-
-    .main_footer:after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-.web_copyright{
-    float: left;
-    padding: .5rem .5rem .5rem .5rem;
-}
-
-.ssmm_li{
-    float: right;;
-}
+/*////////////////////  HOME  //////////////////////*/
+/*////////////////////  HOME  //////////////////////*/
+/*////////////////////  HOME  //////////////////////*/
+/*////////////////////  HOME  //////////////////////*/
+/*////////////////////  HOME  //////////////////////*/
+/*////////////////////  HOME  //////////////////////*/
+/*////////////////////  HOME  //////////////////////*/ 
 
 
-.footer_li {
-  display: inline-block;
-  margin-left: 1.518rem;
-  padding: .5rem .5rem .5rem .5rem;
-  }
+        /*//////////////////// PROJECT ITEMS  //////////////////////*/ 
+        .item{
+          overflow: hidden;
+          position: relative;
+        }
+
+        .item a{
+          display: inline-block;
+        }
+
+        .text_box{
+          position: absolute;
+          padding-left: 25.701px;
+          padding-top: 25.701px;
+          text-transform: uppercase;
+        }
+
+        .title_box{
+          font-size: 25.701px;
+          margin-bottom: 6.068px;
+          letter-spacing: 1.5px;
+
+        }
+
+            .title_box span{
+              font-weight: 800;
+            }
+
+        .tag_box{
+          letter-spacing: 1px;
+          font-size: 9.818px;
+        }
+
+
+
+         /*//////////////////// HERO  //////////////////////*/
+        
+              .hero_home{
+                position: absolute;
+                padding-left: 25.701px;
+                padding-top: 25.701px;
+              }
+
+              .intro_home{
+              font-weight: 800;
+              font-size: 41.584px;
+              margin-bottom: 67.284px;
+              }
+
+                .intro_home span{
+                  display: block;
+                }
+
+              .second_par{
+              font-weight: 400;
+              font-size: 25.701px;
+              margin-bottom: 15.885px;
+              }
+
+              .third_par{
+                font-weight: 400;
+              font-size: 25.701px;
+              margin-bottom: 67.284px;
+              }
+
+                  .second_par span,
+                  .third_par span{
+                    display: block;
+                  }
+
+              .icon_hero{
+                height: 75px;
+                width: 75px;
+                margin: 0 auto;
+              }
+
+
+
+          /*//////////////////// OTHER WRITINGS  //////////////////////*/
+        
+          .reflexion{
+            position: absolute;
+            font-weight: 300;
+            font-size: 25.701px;
+            padding-right: 25.701px;
+            padding-top: 25.701px;
+          }
+
+          .align_right{
+            text-align: right
+          }
+
+          .align_left{
+            text-align: left
+          }
+
+          .reflexion_quote{
+            font-weight: 800;
+            font-size: 25.701px;
+            margin-bottom: 67.284px;
+          }  
+
+              .reflexion span{
+                display: block;
+              }
+          
+          .bye_container{
+            width: 100%;
+            margin: 0 auto;
+          }
+    
+           .last_text{
+            display: inline-block;
+            font-weight: 800;
+            font-size: 25.701px;
+            height: 30px;
+            line-height: 30px;
+            background: blue;
+           } 
+
+           .kiss_container{
+            display: inline-block;
+            background: green;
+            height: 30px;
+            width: 30px;
+           }
+
 
 
 /*////////////////////  HOVER  //////////////////////*/
@@ -498,8 +668,6 @@ transform: translateY(3px) rotate(0deg);
 /*////////////////////  HOVER  //////////////////////*/  
 
 .gradient_hover{
-  display: inline-block;
-  padding: .5rem .5rem .5rem .5rem;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -540,10 +708,10 @@ transform: translateY(3px) rotate(0deg);
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.footer_li:hover, .footer_li:focus, .footer_li:active {
+.gradient_hover:hover, .gradient_hover:focus, .gradient_hover:active {
   color: white;
 }
-.footer_li:hover:before, .footer_li:focus:before, .footer_li:active:before {
+.gradient_hover:hover:before, .gradient_hover:focus:before, .gradient_hover:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -560,12 +728,10 @@ transform: translateY(3px) rotate(0deg);
 
 
 .page_introduction{
-    width: 50%;
     padding-right: 3.125rem;
     margin-bottom: 3.981rem;
     font-weight: 800;
     font-size: 2.462rem;
-    text-align: right;
 }
 
 
@@ -589,7 +755,7 @@ transform: translateY(3px) rotate(0deg);
 .project_container{
     position: relative;
     width: 100%;
-    height: 16.875rem;
+    height: 285px;
     margin-bottom: 1.518rem;
     overflow: hidden;
     border-radius: 6px;
@@ -603,17 +769,16 @@ transform: translateY(3px) rotate(0deg);
 
     position: absolute;
     display: block;
-    top: 1.518rem;
-    left: 1.518rem;
-    text-align: right;
+    padding-top: 25.701px;
+    padding-left: 25.701px;
 }
 
 
 .project_title{   
-    font-size: 1.518rem;
+    font-size: 25.701px;
     text-transform: uppercase;
     font-weight: 800;
-    margin-bottom: .581rem;
+    margin-bottom: 6.068px;
 }
 
     .project_title span{
@@ -622,8 +787,8 @@ transform: translateY(3px) rotate(0deg);
 
 .project_tag{
     text-transform: uppercase;
-    font-size: .581rem;
-    letter-spacing: .5px;
+    font-size: 9.818px;
+    letter-spacing: 1px;
 }
 
 
@@ -722,124 +887,6 @@ transform: translateY(3px) rotate(0deg);
         margin-bottom: 0rem;
     }
 /*//////////////////// PHOTO CONTAINER //////////////////////*/
-
-
-
-
-
-
-
-
-
-
-
-/*//////////////////// PORTFOLIO PAGE //////////////////////*/
-/*//////////////////// PORTFOLIO PAGE //////////////////////*/
-/*//////////////////// PORTFOLIO PAGE //////////////////////*/
-/*//////////////////// PORTFOLIO PAGE //////////////////////*/
-/*//////////////////// PORTFOLIO PAGE //////////////////////*/
-/*//////////////////// PORTFOLIO PAGE //////////////////////*/
-/*//////////////////// PORTFOLIO PAGE //////////////////////*/
-/*//////////////////// PORTFOLIO PAGE //////////////////////*/
-/*//////////////////// PORTFOLIO PAGE //////////////////////*/
-
-
-
-.project_grid{
-    width: 100%;
-}
-        .project_grid:after{
-            content: "";
-            display: block;
-            clear: both;
-        }
-
-
-
-.right{
-    float:right;
-    margin-right: 0px;
-    margin-bottom: 50px;
-}
-
-    .right_exception{
-        
-        margin-right: 50px;
-    }
-
-
-
-
-.left{
-    float: left;
-    margin-right: 50px;
-    margin-bottom: 50px;
-}
-
-
-
-     .project_grid:after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-
-
-.cont_type1{
-    position: relative;
-
-    display: inline-block;
-    width: 597.5px;
-    height: 16.875rem;
-
-
-    background: grey;
-    border-radius: 6px;
-    overflow: hidden;
-    vertical-align: text-top;
-}
-
-.cont_type2{
-    position: relative;
-
-    display: inline-block;
-    width: 597.5px;
-    height: 36.875rem;
-
-    background: grey;
-    border-radius: 6px;
-    overflow: hidden;
-    vertical-align: text-top;
-
-}
-
-.cont_type3{
-    position: relative;
-
-    display: inline-block;
-    width: 273.75px;
-    height: 16.875rem;
-
-
-    background: grey;
-    border-radius: 6px;
-    overflow: hidden;
-    vertical-align: text-top;
-
-}
-
-
-.project_title_group{
-    position: absolute;
-
-    top: 1.518rem;
-    left: 1.518rem;
-    text-align: right;
-}
-
-
-
 
 
 

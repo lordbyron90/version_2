@@ -44,7 +44,7 @@ $(document).ready(function(){
 
   	$container.isotope({
     masonry: {
-      columnWidth: 285,
+      columnWidth: 255,
       gutterWidth: 20
     }
   	});
