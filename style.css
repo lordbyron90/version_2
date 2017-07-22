@@ -207,7 +207,7 @@ body{
     overflow: hidden;
     position: relative;
     background: #FBFBFB;
-    padding-top: 7.5rem;
+    padding-top: 9.85rem;
 
 }
 
@@ -274,6 +274,7 @@ transform: translateY(3px) rotate(0deg);
           text-align: right;
           display: inline-block;
           margin-top: 108.865px;
+          text-align: right;
         }
 
         .overlay_item a{
@@ -304,11 +305,11 @@ transform: translateY(3px) rotate(0deg);
     height: 6px;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#90f7ec+0,7db9e8+100 */
-    background: #90f7ec; /* Old browsers */
-    background: -moz-linear-gradient(left, #90f7ec 0%, #7db9e8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #90f7ec 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #90f7ec 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#90f7ec', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+    background: #CE9FFC; /* Old browsers */
+    background: -moz-linear-gradient(left, #CE9FFC 0%, #7367F0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #CE9FFC 0%,#7367F0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #CE9FFC 0%,#7367F0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CE9FFC', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
 
 }           
 
@@ -328,8 +329,8 @@ transform: translateY(3px) rotate(0deg);
     position: fixed;
     height: 3.981rem;
     width: 100%;
-    margin-bottom: 3.981rem;
     z-index: 9999;
+    background: #FBFBFB;
 }
         
          .main_header:after{
@@ -542,15 +543,13 @@ transform: translateY(3px) rotate(0deg);
 
         .text_box{
           position: absolute;
-          padding-left: 25.701px;
-          padding-top: 25.701px;
           text-transform: uppercase;
         }
 
         .title_box{
-          font-size: 25.701px;
-          margin-bottom: 6.068px;
+          font-size: 1.43rem;
           letter-spacing: 1.5px;
+          margin-bottom: .33rem;
 
         }
 
@@ -560,8 +559,76 @@ transform: translateY(3px) rotate(0deg);
 
         .tag_box{
           letter-spacing: 1px;
-          font-size: 9.818px;
+          font-size: .54rem;
         }
+
+/*////////////////////  HOVER  BOXES//////////////////////*/
+/*////////////////////  HOVER  BOXES//////////////////////*/
+/*////////////////////  HOVER  BOXES//////////////////////*/
+/*////////////////////  HOVER  BOXES//////////////////////*/
+/*////////////////////  HOVER  BOXES//////////////////////*/
+/*////////////////////  HOVER  BOXES//////////////////////*/
+/*////////////////////  HOVER  BOXES//////////////////////*/ 
+
+figure.hover_box img {
+  max-width: none;
+  width: -webkit-calc(100% + 50px);
+  width: calc(100% + 50px);
+  opacity: .1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-40px,0, 0);
+  transform: translate3d(-40px,0,0);
+}
+
+figure.hover_box figcaption {
+  text-align: left;
+}
+
+figure.hover_box figcaption > div {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+}
+
+figure.hover_box h2,
+figure.hover_box p {
+  -webkit-transform: translate3d(0,40px,0);
+  transform: translate3d(0,40px,0);
+}
+
+figure.hover_box h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.hover_box p {
+  color: rgba(40,40,40,0.8);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.hover_box:hover img,
+figure.hover_box:hover p {
+  opacity: 1;
+}
+
+figure.hover_box:hover img,
+figure.hover_box:hover h2,
+figure.hover_box:hover p {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.hover_box:hover p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}
+
 
 
 
@@ -569,14 +636,19 @@ transform: translateY(3px) rotate(0deg);
         
               .hero_home{
                 position: absolute;
-                padding-left: 25.701px;
-                padding-top: 25.701px;
+                width: 100%;
+                height: 100%;
+                background: #282828;
+                color: #FBFBFB;
+                text-align: center;
               }
 
               .intro_home{
               font-weight: 800;
-              font-size: 41.584px;
-              margin-bottom: 67.284px;
+              font-size: 2.32rem;
+
+              margin-top: 3.76rem;
+              margin-bottom: 3.76rem;
               }
 
                 .intro_home span{
@@ -584,15 +656,15 @@ transform: translateY(3px) rotate(0deg);
                 }
 
               .second_par{
-              font-weight: 400;
-              font-size: 25.701px;
-              margin-bottom: 15.885px;
+              font-weight: 300;
+              font-size: 1.43rem;
+              margin-bottom: .89rem;
               }
 
               .third_par{
-                font-weight: 400;
-              font-size: 25.701px;
-              margin-bottom: 67.284px;
+              font-weight: 300;
+              font-size: 1.43rem;
+              margin-bottom: 3.76rem;
               }
 
                   .second_par span,
@@ -601,8 +673,8 @@ transform: translateY(3px) rotate(0deg);
                   }
 
               .icon_hero{
-                height: 75px;
-                width: 75px;
+                height: 50px;
+                width: 50px;
                 margin: 0 auto;
               }
 
@@ -611,25 +683,21 @@ transform: translateY(3px) rotate(0deg);
           /*//////////////////// OTHER WRITINGS  //////////////////////*/
         
           .reflexion{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            background: #282828;
+            color: #FBFBFB;
             position: absolute;
             font-weight: 300;
-            font-size: 25.701px;
-            padding-right: 25.701px;
-            padding-top: 25.701px;
-          }
+            font-size: 1.43rem;
 
-          .align_right{
-            text-align: right
-          }
-
-          .align_left{
-            text-align: left
           }
 
           .reflexion_quote{
             font-weight: 800;
-            font-size: 25.701px;
-            margin-bottom: 67.284px;
+            margin-top: 3.25rem;
+            margin-bottom: 3.76rem;
           }  
 
               .reflexion span{
@@ -638,34 +706,34 @@ transform: translateY(3px) rotate(0deg);
           
           .bye_container{
             width: 100%;
-            margin: 0 auto;
+            text-align: center;
+            margin-top: 3.76rem;
           }
     
            .last_text{
             display: inline-block;
             font-weight: 800;
-            font-size: 25.701px;
-            height: 30px;
-            line-height: 30px;
-            background: blue;
+            font-size: 1.43rem;
+            height: 2.32rem;
+            line-height: 2.32rem;
            } 
 
            .kiss_container{
             display: inline-block;
-            background: green;
-            height: 30px;
-            width: 30px;
+            margin-left: .89rem;
+            height: 2.32rem;
+            width: 2.32rem;
            }
 
 
 
-/*////////////////////  HOVER  //////////////////////*/
-/*////////////////////  HOVER  //////////////////////*/
-/*////////////////////  HOVER  //////////////////////*/
-/*////////////////////  HOVER  //////////////////////*/
-/*////////////////////  HOVER  //////////////////////*/
-/*////////////////////  HOVER  //////////////////////*/
-/*////////////////////  HOVER  //////////////////////*/  
+/*////////////////////  HOVER  WORDS//////////////////////*/
+/*////////////////////  HOVER  WORDS//////////////////////*/
+/*////////////////////  HOVER  WORDS//////////////////////*/
+/*////////////////////  HOVER  WORDS//////////////////////*/
+/*////////////////////  HOVER  WORDS//////////////////////*/
+/*////////////////////  HOVER  WORDS//////////////////////*/
+/*////////////////////  HOVER  WORDS//////////////////////*/  
 
 .gradient_hover{
   vertical-align: middle;
@@ -690,11 +758,11 @@ transform: translateY(3px) rotate(0deg);
 
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#90f7ec+0,7db9e8+100 */
-    background: #90f7ec; /* Old browsers */
-    background: -moz-linear-gradient(left, #90f7ec 0%, #7db9e8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #90f7ec 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #90f7ec 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#90f7ec', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+    background: #CE9FFC; /* Old browsers */
+    background: -moz-linear-gradient(left, #CE9FFC 0%, #7367F0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #CE9FFC 0%,#7367F0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #CE9FFC 0%,#7367F0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CE9FFC', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
 
 
   -webkit-transform: scaleX(0);
@@ -715,6 +783,8 @@ transform: translateY(3px) rotate(0deg);
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+
 
 
 /*////////////////////  BODY BLOG  //////////////////////*/
