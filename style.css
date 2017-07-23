@@ -468,6 +468,7 @@ transform: translateY(3px) rotate(0deg);
 
 .item.w2 { width: 530px; height: 255px; }
 .item.h2 { width: 530px; height: 530px; }
+.item.h2_2 { width: 255px; height: 530px; }
 
 /* Start: Recommended Isotope styles */
 
@@ -575,7 +576,7 @@ figure.hover_box img {
   max-width: none;
   width: -webkit-calc(100% + 50px);
   width: calc(100% + 50px);
-  opacity: .1;
+  opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-40px,0, 0);
@@ -606,7 +607,7 @@ figure.hover_box h2 {
 
 figure.hover_box p {
   color: rgba(40,40,40,0.8);
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
   transition: opacity 0.2s, transform 0.35s;
 }
@@ -798,74 +799,8 @@ figure.hover_box:hover p {
 
 
 
-.page_introduction{
-    padding-right: 3.125rem;
-    margin-bottom: 3.981rem;
-    font-weight: 800;
-    font-size: 2.462rem;
-}
 
 
-.page_introduction span{
-    display: block;
-}
-
-
-
-/*////////////////////  CONTAINER BLOG  //////////////////////*/
-/*////////////////////  CONTAINER BLOG  //////////////////////*/
-/*////////////////////  CONTAINER BLOG  //////////////////////*/
-/*////////////////////  CONTAINER BLOG  //////////////////////*/
-/*////////////////////  CONTAINER BLOG  //////////////////////*/
-/*////////////////////  CONTAINER BLOG  //////////////////////*/
-/*////////////////////  CONTAINER BLOG  //////////////////////*/
-/*////////////////////  CONTAINER BLOG  //////////////////////*/
-/*////////////////////  CONTAINER BLOG  //////////////////////*/
-
-
-.project_container{
-    position: relative;
-    width: 100%;
-    height: 285px;
-    margin-bottom: 1.518rem;
-    overflow: hidden;
-    border-radius: 6px;
-}
-
-            .project_container:last-of-type{
-                margin-bottom: 0rem;
-            }
-
-.project_description_cont{
-
-    position: absolute;
-    display: block;
-    padding-top: 25.701px;
-    padding-left: 25.701px;
-}
-
-
-.project_title{   
-    font-size: 25.701px;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-bottom: 6.068px;
-}
-
-    .project_title span{
-       font-weight: 300; 
-    }
-
-.project_tag{
-    text-transform: uppercase;
-    font-size: 9.818px;
-    letter-spacing: 1px;
-}
-
-
-.project_tag span{
-    margin-left: .581em;
-}
 
 
 
@@ -949,7 +884,6 @@ figure.hover_box:hover p {
   margin-bottom: 1.43rem;
   overflow: hidden;
   border-radius: 6px;
-  background: yellow;
 }
 
 .photo_description{
@@ -967,30 +901,30 @@ figure.hover_box:hover p {
 
 /*//////////////////// PHOTO CONTAINER HOVER//////////////////////*/
 
-figure.effect-goliath {
+figure.hover_page {
   background: #FBFBFB;
 }
 
-figure.effect-goliath img,
-figure.effect-goliath h2 {
+figure.hover_page img,
+figure.hover_page h2 {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
 
-figure.effect-goliath img {
+figure.hover_page img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-figure.effect-goliath h2,
-figure.effect-goliath p {
+figure.hover_page h2,
+figure.hover_page p {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 30px;
 }
 
-figure.effect-goliath p {
+figure.hover_page p {
   text-transform: none;
   font-size: 90%;
   opacity: 0;
@@ -1000,17 +934,17 @@ figure.effect-goliath p {
   transform: translate3d(0,50px,0);
 }
 
-figure.effect-goliath:hover img {
+figure.hover_page:hover img {
   -webkit-transform: translate3d(0,-80px,0);
   transform: translate3d(0,-80px,0);
 }
 
-figure.effect-goliath:hover h2 {
+figure.hover_page:hover h2 {
   -webkit-transform: translate3d(0,-100px,0);
   transform: translate3d(0,-100px,0);
 }
 
-figure.effect-goliath:hover p {
+figure.hover_page:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
