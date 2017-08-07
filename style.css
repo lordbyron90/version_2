@@ -305,10 +305,15 @@ transform: translateY(3px) rotate(0deg);
 .rainbow_container{
     width: 100%;
     height: .5rem;
-
+    overflow: hidden;
     background: #282828;
+    transition: height 200ms ease-in 0s;
+}       
 
-}           
+.rainbow_container.animateOverlay{
+  height: calc(100vh - 64px);
+  transition: height 400ms ease-out 0s;
+}    
 
 /*////////////////////  HEADER //////////////////////*/
 /*////////////////////  HEADER //////////////////////*/
@@ -836,6 +841,7 @@ figure.hover_box:hover p {
   float: left;
   width: 30%;
   padding-right: 1.43rem;
+  position: relative;  
 }
 
 .column_photo{

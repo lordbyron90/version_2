@@ -52,17 +52,48 @@ $(document).ready(function(){
   	//overlayed menu
       $('.burger_menu').on('click', function() {
       	var _this = $(this);
-          $('.overlay').toggleClass('animateOverlay');
+          $('.rainbow_container').toggleClass('animateOverlay');
+          $('.main_header').css('height','auto');
           _this.toggleClass('open');
       })
 
-     //reveal
-     var config = {
-          viewFactor : 0.15,
-          duration   : 800,
-          distance   : "0px",
-          scale      : 0.8,
-        };
 
-    window.sr = new ScrollReveal(config);   
+    //follow_scroll
+
+    if ( $(".column_text").length ){
+
+		var element = $(".column_text"),
+			originalY = element.offset().top;
+
+		var navHeight = $(".main_header").outerHeight();
+
+		var topMargin = 20,
+			topDistance = '';
+
+        console.log("originalY:", originalY);
+
+
+		$(window).on('scroll', function(event) {
+	    	var scrollTop = $(window).scrollTop();	
+			var topDistance = 0;
+
+			if (scrollTop < originalY){
+				console.log("topDistance 1: ",topDistance);
+				topDistance = 0;
+			}
+			else{
+				topDistance = scrollTop - originalY + topMargin*2 + navHeight;
+			}
+	    
+		    element.stop(false, false).animate({
+	        	top:topDistance
+		    }, 250, 'swing');
+
+
+
+		});  
+
+    }
+
+    
 });
