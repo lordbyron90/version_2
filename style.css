@@ -93,9 +93,15 @@ html,body{
 }
 
 
+::-moz-selection { /* Code for Firefox */
+    color: #282828; 
+    background: #F1C40F;
+}
 
-
-
+::selection {
+    color: #282828; 
+    background: #F1C40F;
+}
 
 /*////////////////////  FONT //////////////////////*/
 /*////////////////////  FONT //////////////////////*/
@@ -212,9 +218,6 @@ body{
 }
 
 .main_container{
-   /* max-width: 77.815rem;
-    width: 77.815rem;*/
-
 
     width: 75vw;
 
@@ -224,72 +227,6 @@ body{
 }
 
 
-/*////////////////////  OVERLAY //////////////////////*/
-/*////////////////////  OVERLAY //////////////////////*/
-/*////////////////////  OVERLAY //////////////////////*/
-/*////////////////////  OVERLAY //////////////////////*/
-/*////////////////////  OVERLAY //////////////////////*/
-/*////////////////////  OVERLAY //////////////////////*/
-/*////////////////////  OVERLAY //////////////////////*/
-/*////////////////////  OVERLAY //////////////////////*/
-/*////////////////////  OVERLAY //////////////////////*/
-/*////////////////////  OVERLAY //////////////////////*/
-
-.overlay{
-    position: fixed;
-    top: -500px;
-    width: 75vw;
-    text-align: right;
-    height: 25.78rem;
-    z-index: 9000;
-
-    background: #FBFBFB;
-    transition: top 600ms ease-out 0s;
-}
-
-.overlay.animateOverlay{
-  top:0;
-  transition: top 600ms ease-out 0s;    
-}
-
-.burger_menu .line_ov.line_1,
-.burger_menu .line_ov.line_2 {
-transition: transform .3s ease-out;   
-transform: translateY(3px) rotate(0deg); 
-}
-
-.burger_menu.open .line_ov.line_1 {
-    transform: translateY(0px) rotate(45deg);
-    transition: transform .3s ease-out;
-}
-.burger_menu.open .line_ov.line_2 {
-    transform: translateY(-6px) rotate(-45deg);
-    transition: transform .3s ease-out;
-}
-
-
-        /*////////////////////  OVERLAY CONTENT //////////////////////*/
-        /*////////////////////  OVERLAY CONTENT //////////////////////*/
-
-        .overlay_container{
-          text-align: right;
-          display: inline-block;
-          margin-top: 6.08rem;
-          text-align: right;
-          width: 25%;
-        }
-
-        .overlay_item a{
-          display: inline-block;
-        }
-
-        .overlay_item{
-          font-weight: 800;
-          font-size: 2.32rem;
-          margin-bottom: 1.43rem;
-        }
-
-        
 /*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
 /*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
 /*////////////////////  RAINBOW HEADER FOOTER //////////////////////*/
@@ -313,7 +250,58 @@ transform: translateY(3px) rotate(0deg);
 .rainbow_container.animateOverlay{
   height: calc(100vh - 64px);
   transition: height 400ms ease-out 0s;
-}    
+} 
+
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+/*////////////////////  OVERLAY //////////////////////*/
+
+.burger_menu .line_ov.line_1,
+.burger_menu .line_ov.line_2 {
+transition: transform .3s ease-out;   
+transform: translateY(3px) rotate(0deg); 
+}
+
+.burger_menu.open .line_ov.line_1 {
+    transform: translateY(0px) rotate(45deg);
+    transition: transform .3s ease-out;
+}
+.burger_menu.open .line_ov.line_2 {
+    transform: translateY(-6px) rotate(-45deg);
+    transition: transform .3s ease-out;
+}
+
+
+        /*////////////////////  OVERLAY CONTENT //////////////////////*/
+        /*////////////////////  OVERLAY CONTENT //////////////////////*/
+
+        .overlay_container{
+          text-align: right;
+          display: inline-block;
+          padding: 9.85rem;
+          width: 100%;
+        }
+
+        .overlay_item a{
+          display: inline-block;
+        }
+
+        .overlay_item{
+          font-weight: 800;
+          font-size: 3.76rem;
+          margin-bottom: 2.32rem;
+          color: #FBFBFB;
+        }
+
+        
+   
 
 /*////////////////////  HEADER //////////////////////*/
 /*////////////////////  HEADER //////////////////////*/
@@ -329,10 +317,11 @@ transform: translateY(3px) rotate(0deg);
 
 .main_header{
     position: fixed;
-    height: 3.981rem;
+    height: calc(3.981rem + .5rem);
     width: 100%;
     z-index: 9999;
     background: #FBFBFB;
+    overflow: hidden;
 }
         
          .main_header:after{
@@ -347,17 +336,17 @@ transform: translateY(3px) rotate(0deg);
             clear:both;
         }
 
+.header_container{
+  height: 3.981rem;
+}
 
 .logo{
     float: left;
-    width: 3.981rem;
     height: 100%;
+    width: 9.85rem;
+    overflow: hidden;
+    background: #F1C40F;
 }
-
-
-    .logo img{
-        transform: scale(.75);
-    }
 
 
 
@@ -405,6 +394,11 @@ transform: translateY(3px) rotate(0deg);
 
 
 
+
+
+
+
+
 /*////////////////////  FOOTER  //////////////////////*/
 /*////////////////////  FOOTER  //////////////////////*/
 /*////////////////////  FOOTER  //////////////////////*/
@@ -416,7 +410,7 @@ transform: translateY(3px) rotate(0deg);
 .main_footer{
     width: 100%;
     padding: 3.76rem 0rem;
-    margin-top: 2.32rem;
+    margin-top: 6.08rem;
 
     font-weight: 400;
     font-size: .89rem;
@@ -433,6 +427,12 @@ transform: translateY(3px) rotate(0deg);
     float: left;
     padding: .5rem .5rem .5rem .5rem;
 }
+    
+    .web_copyright span{
+      color:#282828;
+      font-weight: 800;
+    }
+
 
 .ssmm_li{
     float: right;;
@@ -444,6 +444,11 @@ transform: translateY(3px) rotate(0deg);
   margin-left: 1.43rem;
   padding: .5rem .5rem .5rem .5rem;
   }
+
+
+
+
+
 
 
 
@@ -525,6 +530,13 @@ transform: translateY(3px) rotate(0deg);
 
 
 
+
+
+
+
+
+
+
 /*////////////////////  HOME  //////////////////////*/
 /*////////////////////  HOME  //////////////////////*/
 /*////////////////////  HOME  //////////////////////*/
@@ -538,8 +550,6 @@ transform: translateY(3px) rotate(0deg);
         .item{
           overflow: hidden;
           position: relative;
-          border-bottom: 1px solid rgba(150,150,150,.25);
-          border-right: 1px solid rgba(150,150,150,.25);
         }
 
         .item a{
@@ -575,6 +585,13 @@ transform: translateY(3px) rotate(0deg);
         }
 
 
+
+
+
+
+
+
+
 /*////////////////////  HOVER  BOXES//////////////////////*/
 /*////////////////////  HOVER  BOXES//////////////////////*/
 /*////////////////////  HOVER  BOXES//////////////////////*/
@@ -590,25 +607,67 @@ figure.hover_box img {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-40px,0, 0);
-  transform: translate3d(-40px,0,0);
+  -webkit-transform: translate3d(0,10px,0);
+  transform: translate3d(0,10px,0);
 }
 
 
 figure.hover_box figcaption > div {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  padding: 2.32rem;
+  bottom: 0;
   width: auto;
   height: auto;
-  text-align: left;
-  transition: text-align 2s;
+  -webkit-transition: color 0.35s;
+  transition: color 0.35s;
 }
+    figure.hover_box:hover figcaption > div,
+    figure.hover_box:hover figcaption > div > p {
+      color: #FBFBFB;
+    }
+
+.box_icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2.32rem;
+  height: 3.76rem;
+  width: 3.76rem;
+  background: #F1C40F;
+  color: black;
+
+  -webkit-transform: translate3d(0,0px,0);
+  transform: translate3d(0,0,0);
+}
+
+    .item:hover .box_icon{
+    -webkit-transform: translate3d(0,0px,0);
+    transform: translate3d(0,.89rem,0);
+    transition: transform 0.35s;
+    }
+
+.line_icon{
+  position: absolute;
+  top: -0.89rem;
+  left: 0;
+  height: .89rem;
+  width: 100%;
+  background: #F1C40F;
+
+  -webkit-transform: translate3d(0,0px,0);
+  transform: translate3d(0,0,0);
+}
+
+    .item:hover .line_icon{
+    -webkit-transform: translate3d(0,0px,0);
+    transform: translate3d(0,.89rem,0);
+    transition: transform 0.35s;
+    }
+
 
 figure.hover_box h2,
 figure.hover_box p {
-  -webkit-transform: translate3d(0,40px,0);
+  -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   width: 100%;
 }
@@ -621,25 +680,19 @@ figure.hover_box h2 {
 figure.hover_box p {
   color: rgba(40,40,40,0.8);
   opacity: 1;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
-  transition: opacity 0.2s, transform 0.35s;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
 
 figure.hover_box:hover img{
   opacity: 1;
-}
-
-figure.hover_box:hover img,
-figure.hover_box:hover h2,
-figure.hover_box:hover p {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 
 
 figure.hover_box:hover p {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
+
   -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s;
 }
@@ -653,17 +706,20 @@ figure.hover_box:hover p {
                 position: absolute;
                 width: 100%;
                 height: 100%;
+                padding: 3.76rem;
                 background: #282828;
                 color: #FBFBFB;
-                text-align: center;
+                text-align: left;
               }
 
               .intro_home{
               font-weight: 800;
               font-size: 2.32rem;
+              line-height: 3.04rem;
+              margin-bottom: 2.32rem;
 
-              margin-top: 3.76rem;
-              margin-bottom: 3.76rem;
+              
+             
               }
 
                 .intro_home span{
@@ -673,23 +729,17 @@ figure.hover_box:hover p {
               .second_par{
               font-weight: 300;
               font-size: 1.43rem;
-              margin-bottom: .89rem;
-              }
-
-              .third_par{
-              font-weight: 300;
-              font-size: 1.43rem;
+              line-height: 1.875rem;
               margin-bottom: 3.76rem;
               }
 
-                  .second_par span,
-                  .third_par span{
+                  .second_par span{
                     display: block;
                   }
 
               .icon_hero{
-                height: 50px;
-                width: 50px;
+                height: 6.08rem;
+                width: 6.08rem;
                 margin: 0 auto;
               }
 
@@ -700,45 +750,50 @@ figure.hover_box:hover p {
           .reflexion{
             height: 100%;
             width: 100%;
-            text-align: center;
+            text-align: left;
             background: #282828;
             color: #FBFBFB;
             position: absolute;
             font-weight: 300;
             font-size: 1.43rem;
+            padding: 2.32rem;
 
           }
 
           .reflexion_quote{
             font-weight: 800;
-            margin-top: 3.25rem;
-            margin-bottom: 3.76rem;
+            line-height: 1.875rem;
+            margin-bottom: 2.32rem;
           }  
 
               .reflexion span{
                 display: block;
+                line-height: 1.875rem;
+
               }
           
           .bye_container{
-            width: 100%;
+            width: 40%;
             text-align: center;
-            margin-top: 3.76rem;
+            margin: 6.08rem auto;
+            height: 2.32rem;
+            background: #282828;
+            border-radius: 6px;
           }
     
            .last_text{
             display: inline-block;
-            font-weight: 800;
-            font-size: 1.43rem;
-            height: 2.32rem;
+            font-weight: 400;
+            font-size: .89rem;
             line-height: 2.32rem;
+            color: #FBFBFB;
            } 
 
-           .kiss_container{
-            display: inline-block;
-            margin-left: .89rem;
-            height: 2.32rem;
-            width: 2.32rem;
-           }
+
+
+
+
+
 
 
 
@@ -749,6 +804,9 @@ figure.hover_box:hover p {
 /*////////////////////  HOVER  WORDS//////////////////////*/
 /*////////////////////  HOVER  WORDS//////////////////////*/
 /*////////////////////  HOVER  WORDS//////////////////////*/  
+
+
+/*Gradient white*/
 
 .gradient_hover{
   vertical-align: middle;
@@ -774,6 +832,7 @@ figure.hover_box:hover p {
 
   
   background: #282828; 
+  border-radius: 6px; 
     
 
   -webkit-transform: scaleX(0);
@@ -796,6 +855,52 @@ figure.hover_box:hover p {
 }
 
 
+/*Gradient black*/
+
+.gradient_hover_black{
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.gradient_hover_black:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+
+  background: #F1C40F;
+  border-radius: 6px; 
+    
+
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5 s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.gradient_hover_black:hover, .gradient_hover_black:focus, .gradient_hover_black:active {
+  color: #282828;
+}
+.gradient_hover_black:hover:before, .gradient_hover_black:focus:before, .gradient_hover_black:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 
 /*////////////////////  BODY BLOG  //////////////////////*/

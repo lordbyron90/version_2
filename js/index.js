@@ -87,7 +87,7 @@ $(document).ready(function(){
 	    
 		    element.stop(false, false).animate({
 	        	top:topDistance
-		    }, 250, 'swing');
+		    }, 350, 'swing');
 
 
 
