@@ -790,8 +790,23 @@ figure.hover_box:hover p {
            } 
 
 
+            /*//////////////////// OTHER WRITINGS  //////////////////////*/
+        
 
+            .presentation{
+              font-weight: 800;
+              font-size: 2.32rem;
+              line-height: 3.04rem;
+              margin: 6.08rem 0 9.85rem 0;
 
+            }
+
+              .presentation span{
+                display: block;
+                color: #F1C40F;
+                font-weight: 400;
+
+              }
 
 
 
@@ -902,14 +917,6 @@ figure.hover_box:hover p {
   transform: scaleX(1);
 }
 
-
-/*////////////////////  BODY BLOG  //////////////////////*/
-/*////////////////////  BODY BLOG  //////////////////////*/
-/*////////////////////  BODY BLOG  //////////////////////*/
-/*////////////////////  BODY BLOG  //////////////////////*/
-/*////////////////////  BODY BLOG  //////////////////////*/
-/*////////////////////  BODY BLOG  //////////////////////*/
-/*////////////////////  BODY BLOG  //////////////////////*/
 
 
 
@@ -1064,6 +1071,83 @@ figure.hover_page:hover p {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+
+
+
+
+
+/*////////////////////  BLOG DISPOSITION  //////////////////////*/
+/*////////////////////  BLOG DISPOSITION  //////////////////////*/
+/*////////////////////  BLOG DISPOSITION  //////////////////////*/
+/*////////////////////  BLOG DISPOSITION  //////////////////////*/
+/*////////////////////  BLOG DISPOSITION  //////////////////////*/
+/*////////////////////  BLOG DISPOSITION  //////////////////////*/
+/*////////////////////  BLOG DISPOSITION  //////////////////////*/
+
+.logo_blog_section{
+  width: 9.85rem;
+  height: 9.85rem;
+  margin: 0 auto;
+  background: black;
+}
+
+.section_separation{
+  border-bottom: 1px solid black;
+}
+
+.music_blog_container{
+  width: 100%;
+  padding: 3.76rem 0 3.76rem 0;
+}
+    .music_blog_container:after{
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+.blog_image_gradient{  
+  width: 15.93rem;
+  height: 15.93rem;
+  background: black;
+  float: left;
+  position: relative;
+  border-radius: 6px;
+}
+
+.blog_image_container{
+  width: 9.85rem;
+  height: 9.85rem;
+  overflow: hidden; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.blog_text_container{
+  font-weight: 800;
+  font-size: 3.76rem;
+}
+
+.blog_song{
+  margin-top: 2.32rem;
+  font-weight: 400;
+  font-size: 2.32rem;
+  color: grey;
+}
+
+
+.blog_text_container{
+  display: inline-block;
+  float: right;
+  width: 75%;
+  padding: 0 2.32rem 0 2.32rem ;
+}
+
+
+
+
 
 
 /*//////////////////// CONTACT PAGE //////////////////////*/
