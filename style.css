@@ -76,8 +76,7 @@ a{
 
 img{
     display:block;
-    max-width: 100%;
-    width: 100%;
+    max-width:100%;
     height: auto;
 }
 
@@ -215,7 +214,7 @@ body{
 }
 
 .main_container{
-    width: 75vw;
+    width: 75vw; /*1080px;*/
     margin: 0 auto;
     background: inherit;
 }
@@ -440,6 +439,12 @@ transform: translateY(3px) rotate(0deg);
 /*////////////////////  MASONRY  //////////////////////*/
 /*////////////////////  MASONRY  //////////////////////*/
 /*////////////////////  MASONRY  //////////////////////*/
+
+div#container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .item {
   width: 255px;
