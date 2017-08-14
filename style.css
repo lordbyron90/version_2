@@ -441,12 +441,14 @@ transform: translateY(3px) rotate(0deg);
 /*////////////////////  MASONRY  //////////////////////*/
 
 div#container {
+    border: 1px solid blue;    
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
 .item {
+  border: 1px solid red;
   width: 255px;
   height: 255px;
   display: inline-block;
