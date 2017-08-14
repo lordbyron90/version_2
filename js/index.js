@@ -1,15 +1,17 @@
 $(document).ready(function(){
 
 
-	//masonry
-	var $container = $('#container');
+	var $container = $('#container'),
+		item = 255;
 
-  	$container.isotope({
-    masonry: {
-      columnWidth: 255,
-      gutterWidth: 20
-    }
-  	});
+	$container.isotope({
+		itemSelector: '.item',
+		masonry: {
+			columnWidth: item,
+			isFitWidth: true,
+			gutter: 20
+		}
+	});
 
 
 
@@ -37,15 +39,11 @@ if ( $(".column_text").length ){
 	var topMargin = 20,
 		topDistance = '';
 
-    console.log("originalY:", originalY);
-
-
 	$(window).on('scroll', function(event) {
     	var scrollTop = $(window).scrollTop();	
 		var topDistance = 0;
 
 		if (scrollTop < originalY){
-			console.log("topDistance 1: ",topDistance);
 			topDistance = 0;
 		}
 		else{
