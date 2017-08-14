@@ -76,7 +76,8 @@ a{
 
 img{
     display:block;
-    max-width:100%;
+    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -214,7 +215,7 @@ body{
 }
 
 .main_container{
-    width: 1080px;
+    width: 75vw;
     margin: 0 auto;
     background: inherit;
 }
