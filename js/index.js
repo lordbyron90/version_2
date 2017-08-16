@@ -1,66 +1,100 @@
-//MASONRY
-// modified Isotope methods for gutters in masonry
-$.Isotope.prototype._getMasonryGutterColumns = function() {
-	var gutter = this.options.masonry && this.options.masonry.gutterWidth || 0;
-	containerWidth = this.element.width();
-
-	this.masonry.columnWidth = this.options.masonry && this.options.masonry.columnWidth ||
-	// or use the size of the first item
-	this.$filteredAtoms.outerWidth(true) ||
-	// if there's no items, use size of container
-	containerWidth;
-
-	this.masonry.columnWidth += gutter;
-
-	this.masonry.cols = Math.floor((containerWidth + gutter) / this.masonry.columnWidth);
-	this.masonry.cols = Math.max(this.masonry.cols, 1);
-};
-
-$.Isotope.prototype._masonryReset = function() {
-	// layout-specific props
-	this.masonry = {};
-	// FIXME shouldn't have to call this again
-	this._getMasonryGutterColumns();
-	var i = this.masonry.cols;
-	this.masonry.colYs = [];
-	while (i--) {
-		this.masonry.colYs.push(0);
-	}
-};
-
-$.Isotope.prototype._masonryResizeChanged = function() {
-	var prevSegments = this.masonry.cols;
-	// update cols/rows
-	this._getMasonryGutterColumns();
-	// return if updated cols/rows is not equal to previous
-	return (this.masonry.cols !== prevSegments);
-};
-
-
 $(document).ready(function(){
 
+  	if( $(".pfolio_grid").length ){
+		var $container = $('#container'),
+			item = 255;
 
-	//masonry
-	var $container = $('#container');
+		$container.isotope({
+			itemSelector: '.item',
+			masonry: {
+				columnWidth: item,
+				isFitWidth: true,
+				gutter: 20
+			}
+		});
+	}
 
-  	$container.isotope({
-    masonry: {
-      columnWidth: 255,
-      gutterWidth: 20
-    }
-  	});
+	var $windowW = $(window).width();
+	var defaultLogo = $('.logo img').attr('src');
+	var wpLogoSmall = 'images/min_circle_white.svg';
+	if( $windowW <  710){	
+	  	$('.logo img').attr('src', wpLogoSmall);
+	}else{
+	  	$('.logo img').attr('src', defaultLogo	);
+	}
 
+
+	window.onresize = function(event) {
+
+		var $windowW = $(window).width();
+
+		if( $windowW <  710){	
+		  	$('.logo img').attr('src', wpLogoSmall);
+		}else{
+		  	$('.logo img').attr('src', defaultLogo	);
+		}
+
+	};
 
 
 //OVERLAYED MENU
 	//overlayed menu
-  $('.burger_menu').on('click', function() {
-  	var _this = $(this);
-      $('.rainbow_container').toggleClass('animateOverlay');
-      $('.main_header').css('height','auto');
-      _this.toggleClass('open');
-  })
+	var $windowW = $(window).width();
+	if( $windowW > 1070){
 
+	  	$('.burger_menu').on('click', function() {
+	  	var _this = $(this);
+	    	$('.rainbow_container').toggleClass('animateOverlay');
+	      	$('.main_header').css('height','auto');
+	      	_this.toggleClass('open');
+	      	$('body').toggleClass(' 	block_scroll');
+	  	});
+
+	}	
+
+/*
+  if( $(".pfolio_grid").length() ){
+	 var $windowW = $(window).width();
+	  if( $windowW <  706){
+	  	$container.isotope('destroy');
+	  	$(".item").removeClass('h2');
+	  	$(".item").removeClass('w2');
+	  	$(".item").removeClass('h2_2');
+
+		var $container = $('#container'),
+			item = 255;
+
+			$container.isotope({
+				itemSelector: '.item',
+				masonry: {
+					columnWidth: item,
+					isFitWidth: true,
+					gutter: 20
+				}
+			});
+		}else{
+			$(".pfolio_grid:nth-child(1)").addClass('h2');
+			$(".pfolio_grid:nth-child(1)").addClass('h2');
+			$(".pfolio_grid:nth-child(1)").addClass('h2');
+			$(".pfolio_grid:nth-child(1)").addClass('h2');
+			$(".pfolio_grid:nth-child(1)").addClass('h2');
+			$(".item").addClass('w2');
+			$(".item").addClass('h2_2');
+
+			var $container = $('#container'),
+				item = 255;
+
+			$container.isotope({
+				itemSelector: '.item',
+				masonry: {
+					columnWidth: item,
+					isFitWidth: true,
+					gutter: 20
+				}
+			});
+		}  	
+  }
+*/
 
 
 
@@ -76,15 +110,11 @@ if ( $(".column_text").length ){
 	var topMargin = 20,
 		topDistance = '';
 
-    console.log("originalY:", originalY);
-
-
 	$(window).on('scroll', function(event) {
     	var scrollTop = $(window).scrollTop();	
 		var topDistance = 0;
 
 		if (scrollTop < originalY){
-			console.log("topDistance 1: ",topDistance);
 			topDistance = 0;
 		}
 		else{
