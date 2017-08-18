@@ -92,13 +92,13 @@ html,body{
 /*////////////////////  SELECTION //////////////////////*/
 /*////////////////////  SELECTION //////////////////////*/
 ::-moz-selection { /* Code for Firefox */
-    color: #282828; 
-    background: #9EA0A6;
+    color: #FBFBFB; 
+    background: #282828;
 }
 
 ::selection {
-    color: #282828; 
-    background: #FBFBFB;
+    color: #FBFBFB; 
+    background: #282828;
 }
 
 
@@ -280,6 +280,7 @@ transform: translateY(3px) rotate(0deg);
 /*////////////////////  OVERLAY CONTENT //////////////////////*/
 
 .overlay_container{
+  float: right;
   text-align: right;
   display: inline-block;
   padding-top: 9.85rem;
@@ -296,6 +297,8 @@ transform: translateY(3px) rotate(0deg);
   font-size: 3.76rem;
   margin-bottom: 2.32rem;
   color: #282828;
+  width: 100%;
+  text-align: center;
 }
 
         
@@ -335,8 +338,7 @@ transform: translateY(3px) rotate(0deg);
 }
 
 .header_container{
-  height: 4.92rem;
-}
+  height: 4.92rem}
 
 .logo{
     float: left;
@@ -401,7 +403,6 @@ transform: translateY(3px) rotate(0deg);
 .main_footer{
     width: 100%;
     padding: 3.76rem 0rem;
-    margin-top: 3.76rem;
 
     font-weight: 400;
     font-size: .89rem;
@@ -468,6 +469,7 @@ div#container {
 .item.w2 { width: 530px; height: 255px; }
 .item.h2 { width: 530px; height: 530px; }
 .item.h2_2 { width: 255px; height: 530px; }
+.item.full { width: 100%; height: 530px;}
 
 .isotope-item {
   z-index: 2;
@@ -683,16 +685,14 @@ figure.hover_box:hover p {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 3.76rem;
-  background: /*#282828*/#F3F3F3;
   color: #282828;
   text-align: left;
 }
 
 .intro_home{
 font-weight: 800;
-font-size: 2.32rem;
-line-height: 3.04rem;
+font-size: 3.76rem;
+line-height: 4.92rem;
 margin-bottom: 2.32rem;
 
 }
@@ -706,6 +706,8 @@ font-weight: 300;
 font-size: 1.43rem;
 line-height: 1.875rem;
 margin-bottom: 3.76rem;
+text-decoration: underline;
+letter-spacing: 2px;
 }
 
 .second_par span{
@@ -713,11 +715,14 @@ margin-bottom: 3.76rem;
 }
 
 .icon_hero{
-  height: 6.08rem;
-  width: 6.08rem;
-  margin: 0 auto;
-}
+  height: 9.85rem;
+  width: 9.85rem;
+  margin: 0 auto 6.08rem auto;
 
+}
+ .item.full{
+  margin-bottom: 9.85rem;
+ }
 
 /*//////////////////// OTHER WRITINGS  //////////////////////*/
 
@@ -744,22 +749,12 @@ margin-bottom: 3.76rem;
   line-height: 1.875rem;
 }
 
-.bye_container{
-  width: 40%;
-  text-align: center;
-  margin: 6.08rem auto;
-  height: 2.32rem;
-  background: #282828;
-  border-radius: 6px;
+.golden_icon{
+  width: 6.08rem;
+  height: 3.76rem;
+  margin: 3.76rem auto;
 }
 
- .last_text{
-  display: inline-block;
-  font-weight: 400;
-  font-size: .89rem;
-  line-height: 2.32rem;
-  color: #FBFBFB;
- } 
 
 
 /*////////////////////  HOVER  WORDS//////////////////////*/
@@ -876,13 +871,11 @@ margin-bottom: 3.76rem;
 
 .left_column{
   float: left;
-  background: blue;
 
 }
 
 .right_column{
   float: right;
-  background: pink;
 }
 
 .portfolio_container{
@@ -930,22 +923,21 @@ margin-bottom: 3.76rem;
 
 .column_text{
   height: 400px;
-  float: left;
+  float: right;
   width: 35%;
   position: relative;  
 }
 
 .column_photo{
   width: 60%;
-  float: right;
+  float: left;
 }
 
 .title_page{
   font-size: 2.32rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-
-  margin-bottom: 2.32rem;
+  margin-bottom: 1.43rem;
 }
 
 .title_page span{
@@ -954,24 +946,34 @@ margin-bottom: 3.76rem;
 }
 
 .extract_page{
-  font-size: 1.43rem;
-  line-height: 1.875rem;
-  font-weight: 400;
-  margin-bottom: 3.76rem;
+  font-size: 1.16rem;
+  line-height: 1.43rem;
+  font-weight: 300;
+  margin-bottom: 2.32rem;
+  letter-spacing: 2px;
+  text-decoration: underline;
 }
 
-.date_page{
+.tag_page{
   font-size: .89rem;
   font-weight: 700;
-  color: #6D6A75;
   margin-bottom: .53rem;
+}
+
+.tag_page span{
+  display: block;
+  font-size: .89rem;
+  font-weight: 300;
+  margin-bottom: 1.43rem;
+  padding-top: .53rem;
 }
 
 .cont_page{
   font-size: 1.16rem;
   line-height: 1.43rem;
-  color: #6D6A75;
   font-weight: 300;
+  margin-bottom: 2.32rem;
+  letter-spacing: .5px;
 }
 
 /*//////////////////// PHOTO CONTAINER //////////////////////*/
@@ -983,6 +985,10 @@ margin-bottom: 3.76rem;
   margin-bottom: 1.43rem;
   overflow: hidden;
   border-radius: 6px;
+}
+
+.photo_container_page:last-of-type{
+  margin-bottom: 0rem;
 }
 
 
@@ -1071,43 +1077,108 @@ figure.hover_page:hover p {
 }
 
 .blog_container_gap{
-  width: 54.60rem;
+  width: 85%;
   margin: 0 auto;
-  border-bottom: 1px solid black;
-  padding: 3.76rem 0rem 1.43rem 0rem;
+  border-bottom: 0.5px solid rgba(200, 200, 200, 0.25);
+  padding: 6.08rem 0rem 1.43rem 0rem;
 }
 
 .quote_blog{
+  position:relative;
   font-size: 1.43rem;
   line-height: 1.87rem;
   font-weight: 300;
-  margin-bottom: 1.43rem;
+  width: 85%;
+  margin: 0 auto 2.32rem auto;
+}
+
+.quote_blog:before{
+  position: absolute;
+  left:-9%;
+  content: "''";
+  font-size: 3.78rem;
+  font-weight: 800;
+}
+
+.quote_blog:after{
+  position: absolute;
+  right:-9%;
+  content: "''";
+  font-size: 3.78rem;
+  font-weight: 800;
 }
 
 .author_blog{
   font-size: .89rem;
   font-weight: 800;
-  margin-bottom: .54rem;
+  width: 85%;
+  margin: 0 auto .54rem auto;
+}
+
+.place_blog{
+  font-size: .89rem;
+  font-weight: 800;
+  width: 85%;
+  margin: 0 auto .54rem auto;
 }
 
 .date_blog{
   font-size: .89rem;
   font-weight: 300;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .photo_container{
-  width: 41.71rem;
+  width: 85%;
   margin: 0 auto;
 }
 
 .photo_container img{
-  padding-bottom: 2.32rem;
+  padding-bottom: 1.43rem;
 }
 
 .photo_comment_blog{
+  width: 85%;
+  margin: .89rem auto .89rem auto;
   font-weight: 300;
-  margin-bottom: .54rem;
+  font-size: 1.16rem;
+  line-height: 1.43rem;
 }
+
+.spotify_content{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.spotify_api{
+  width: 35%;
+}
+
+.spotify_content_desc{
+  width: 65%;
+  float: right;
+  padding-left: 2.32rem;
+  font-weight: 800;
+  font-size: 2.32rem;
+  text-align: right;
+}
+
+.spotify_song{
+  font-weight: 300;
+  font-size: 1.43rem;
+  margin-top: 6.08rem;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.spotify_date{
+  font-size: .89rem;
+  font-weight: 300;
+  margin-top: .89rem;
+
+}
+
 
 
 /*//////////////////// CONTACT PAGE //////////////////////*/
@@ -1179,18 +1250,18 @@ figure.hover_page:hover p {
     padding: 0rem 0rem 0rem 0rem;  
   }
   .intro_home{
-    font-size: 2.32rem;
-    line-height: 3.04rem;
+    font-size: 1.875rem;
+    line-height: 2.32rem;
   }
   .second_par{
-    font-size:1.16rem;
-    line-height: 1.43rem;
-    margin-bottom: 3.76rem;
+    font-size:.89rem;
+    line-height: 1.16rem;
   }
 
+
   .icon_hero{
-    height: 9.85rem;
-    width: 9.85rem;
+    height: 6.08rem;
+    width: 6.08rem;
   }
   .logo{
     width: 3.76rem;
@@ -1229,9 +1300,28 @@ figure.hover_page:hover p {
     font-size: 1.16rem;
     line-height: 1.43rem;
     margin-bottom: 3.76rem;
-}
+  }
+
+  .icon_hero{
+    margin: 0 auto 3.76rem auto;
+  }
 
 }
+
+@media only screen and (min-width: 710px) and (max-width:1580px){
+  .intro_home{
+    font-size: 3.04rem;
+    line-height: 3.76rem;
+  }
+  .second_par{
+    font-size: 1.16rem;
+    line-height: 1.43rem;
+    margin-bottom: 3.76rem;
+
+  }
+}
+
+
 @media only screen and (max-width: 1070px){
   .hover_box{
     opacity:1;
@@ -1308,6 +1398,10 @@ figure.hover_page:hover p {
     /*width: 530px;
 */    margin: 0 auto;
   }
+
+  .icon_hero{
+    margin-bottom: 3.76rem;
+  }
 }
 
 
@@ -1346,7 +1440,9 @@ figure.hover_page:hover p {
     margin: 0 auto;
   }
 
-
+  .item.full{
+    margin-bottom: 0rem;
+  }
 
 }
 
