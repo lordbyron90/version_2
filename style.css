@@ -1212,23 +1212,38 @@ figure.hover_page:hover p {
     -webkit-text-fill-color: transparent; 
 }*/
 
+.contact_second_par{
+  font-weight: 300;
+  font-size: 1.43rem;
+  line-height: 1.875rem;
+  margin-bottom: 3.76rem;
+  letter-spacing: 2px;
+  margin-bottom: 9.85rem;
+}
+  .contact_second_par span{
+    font-weight: 800;
+    text-decoration: underline;
+  }
 
-.extract_contact{
-    color: #9EA0A6;
-    font-size: 1.43rem;
-    line-height: 1.75rem;
-    font-weight: 300;
-    margin-bottom: 1.43rem;
-    width: 100%;
+.list_contact{
+  font-size: 1.43rem;
+  font-weight: 300;
+  margin: 2.32rem 0 1.43rem 0;
+  letter-spacing: .5px;
+
 }
 
-/*.extract_contact span{
-   background: -webkit-linear-gradient(left,#CE9FFC, #7367F0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.do_list{
+  font-size: 1.13rem;
+  font-weight: 300;
+  margin-bottom: .54rem;
+  letter-spacing: .25px;
+}
 
-    font-weight: 800; 
-}*/
+.do_mark{
+  font-weight: 800;
+}
+
 
 
 
