@@ -1,41 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>portfolio_noel_lago</title>
-	<link rel="stylesheet" href="style.css?v=sdssdd">
-	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,800,900" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-</head>
-<body>
-	<header class="main_header">
-		<div class="rainbow_container">
-			<ul class="overlay_container">
-					<li class="overlay_item main_container gradient_hover_black"><a href="">home.</a></li>
-					<li class="overlay_item main_container gradient_hover_black"><a href="">projects.</a></li>
-					<li class="overlay_item main_container gradient_hover_black"><a href="">blog.</a></li>
-					<li class="overlay_item main_container gradient_hover_black"><a href="">contact.</a></li>
-			</ul>
-		</div>
-		<div class="main_container header_container">
-			<h1 class="logo">
-				<a href="/"><img src="images/black_logo.svg" alt="Noel Lago Logo"></a>
-			</h1>
+<?php include ('includes/header.php'); ?>
 
-			<div class="burger_menu">
-				<a href="javascript:void(0)" class="x_container">
-					<div class="line_ov line_1"></div>
-					<div class="line_ov line_2"></div>
-				</a>
-			</div>
-		</div>
-	</header>
 
 
 <div class="full_wrapper">
 	<div class="main_container">
-		    <div id="container" class="pfolio_grid">
-
+		    <section id="container" class="pfolio_grid">
 
 				<div class="item full">
 					<div class="hero_home">
@@ -45,14 +14,11 @@
 						<div class="intro_home">
 							i'm noel lago. <span> a minimalistic visual designer.</span>
 						</div>
-
 						<div class="second_par">& this space has been left deliberately empty.</div>
-
-						
 					</div> <!-- End of hero home-->
 				</div><!-- End of item-->
 
-			  	<div class="item w2">
+			  	<article class="item w2">
 				  	<a href="">
 					  	<figure class="hover_box">
 								<img src="images/bird.png" alt="img12"/>
@@ -66,9 +32,9 @@
 						<div class="line_icon"></div>
 						<div class="box_icon"><img src="images/power.svg" alt=""></div>
 					</a>
-			  	</div>
+			  	</article>
 
-			  	<div class="item w2" >
+			  	<article class="item w2" >
 					<a href="">
 					  	<figure class="hover_box">
 								<img src="images/banana.png" alt="img12"/>
@@ -82,7 +48,7 @@
 						<div class="line_icon"></div>
 						<div class="box_icon"><img src="images/power.svg" alt=""></div>
 					</a>
-			  	</div>
+			  	</article>
 
 			  	<!-- <div class="item w2">
 				  	<div class="reflexion">
@@ -95,7 +61,7 @@
 					</div>
 			  	</div> -->
 
-			  	<div class="item w2">
+			  	<article class="item w2">
 				  	<a href="">
 					  	<figure class="hover_box">
 								<img src="images/water.png" alt=""/>
@@ -109,9 +75,9 @@
 						<div class="line_icon"></div>
 						<div class="box_icon"><img src="images/power.svg" alt=""></div>
 					</a>
-			  	</div>
+			  	</article>
 
-			  	<div class="item w2">
+			  	<article class="item w2">
 				  	<a href="">
 					  	<figure class="hover_box">
 								<img src="images/apple.png" alt=""/>
@@ -125,7 +91,7 @@
 						<div class="line_icon"></div>
 						<div class="box_icon"><img src="images/power.svg" alt=""></div>
 					</a>
-			  	</div>
+			  	</article>
 
 
 			  	<!-- <div class="item w2">
@@ -137,7 +103,7 @@
 					</div>
 			  	</div> -->
 
-			  	<div class="item w2">
+			  	<article class="item w2">
 				  	<a href="">
 					  	<figure class="hover_box">
 								<img src="images/black.png" alt=""/>
@@ -151,9 +117,9 @@
 						<div class="line_icon"></div>
 						<div class="box_icon"><img src="images/power.svg" alt=""></div>
 					</a>
-			  	</div>
+			  	</article>
 
-			  	<div class="item w2">
+			  	<article class="item w2">
 				  	<a href="">
 					  	<figure class="hover_box">
 								<img src="images/orange.png" alt=""/>
@@ -167,9 +133,9 @@
 						<div class="line_icon"></div>
 						<div class="box_icon"><img src="images/power.svg" alt=""></div>
 					</a>
-			  	</div>
+			  	</article>
 
-			  	<div class="item w2">
+			  	<article class="item w2">
 				  	<a href="">
 					  	<figure class="hover_box">
 								<img src="images/orange.png" alt=""/>
@@ -183,9 +149,9 @@
 						<div class="line_icon"></div>
 						<div class="box_icon"><img src="images/power.svg" alt=""></div>
 					</a>
-			  	</div>
+			  	</article>
 
-			  	<div class="item w2">
+			  	<article class="item w2">
 				  	<a href="">
 					  	<figure class="hover_box">
 								<img src="images/facebook.png" alt=""/>
@@ -199,36 +165,16 @@
 						<div class="line_icon"></div>
 						<div class="box_icon"><img src="images/power.svg" alt=""></div>
 					</a>
-			  	</div>
+			  	</article>
 
-			</div><!--END OF CONTAINER -->
+			</section><!--END OF CONTAINER -->
 
-				<div class="golden_icon">
-					<img src="images/golden_ratio-04.svg" alt="">
-				</div>
+			<div class="golden_icon">
+				<img src="images/golden_ratio-04.svg" alt="">
+			</div>
+
+<?php include ('includes/footer.php'); ?>
+
+
+
 		
-
-
-
-		<footer class="main_footer">
-			<p class="web_copyright">crafted by <span>©noellago</span></p>
-			<ul class="ssmm_li">
-				<li class="i_instagram footer_li gradient_hover"><a href="/">instagram.</a></li>
-				<li class="i_behance footer_li gradient_hover"><a href="/">behance.</a></li>
-				<li class="i_spotify footer_li gradient_hover"><a href="/">spotify.</a></li>
-				<li class="i_twitter footer_li gradient_hover"><a href="/">twitter.</a></li>
-			</ul>
-
-		</footer><!--FOOTER -->
-
-	</div>	
-
-</div><!--END OF FULL WRAPPER -->
-
-
-  	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src='js/isotope.3.js'></script>
-    <script src="js/index.js?v=u7dkfyh"></script>
-	
-</body>
-</html>

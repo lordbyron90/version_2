@@ -1,3 +1,9 @@
+/*
+Theme name: Noel Lago Portfolio
+Text Domain nlp
+*/
+
+
 /*////////////////////  ERIC MEYER RESET //////////////////////*/
 /*////////////////////  ERIC MEYER RESET //////////////////////*/
 /*////////////////////  ERIC MEYER RESET //////////////////////*/
@@ -190,7 +196,7 @@ html,body{
 
 
 body{
-    font-family: 'cerebri', 'Muli', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'cerebri', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
     color: #282828;
     background: #282828;
@@ -469,7 +475,7 @@ div#container {
 .item.w2 { width: 530px; height: 255px; }
 .item.h2 { width: 530px; height: 530px; }
 .item.h2_2 { width: 255px; height: 530px; }
-.item.full { width: 100%; height: 530px;}
+.item.full { width: 1060px; height: 530px;}
 
 .isotope-item {
   z-index: 2;
